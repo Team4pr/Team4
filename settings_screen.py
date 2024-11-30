@@ -3,7 +3,7 @@ from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QPushButton, QLabel,
                            QTableWidget, QTableWidgetItem)
 from PyQt6.QtCore import Qt, pyqtSignal
 from PyQt6.QtGui import QFont
-from utils.constants import GRID_SIZES
+from constants import GRID_SIZES
 
 class SettingsScreen(QWidget):
    

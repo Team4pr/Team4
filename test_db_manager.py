@@ -4,7 +4,7 @@ import unittest
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from database.db_manager import DatabaseManager, DatabaseError
+from db_manager import DatabaseManager, DatabaseError
 
 
 class TestDatabaseManager(unittest.TestCase):

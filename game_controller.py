@@ -1,9 +1,9 @@
 from typing import Tuple, Optional, Dict, Any
-from models.player import Player
-from models.ai_player import AIPlayer
-from models.grid import Grid
-from database.db_manager import DatabaseManager
-from utils.constants import SHIPS
+from player import Player
+from ai_player import AIPlayer
+from grid import Grid
+from db_manager import DatabaseManager
+from constants import SHIPS
 
 class GameController:
     def __init__(self, db_manager: DatabaseManager):
@@ -262,7 +262,7 @@ class GameController:
                     self.main_window.reset_ui()
 
     def _update_grid_size_in_modules(self):
-        import utils.constants as constants
+        import constants as constants
         constants.GRID_SIZE = self.grid_size
 
     def set_main_window(self, main_window):

@@ -1,7 +1,7 @@
 from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
                              QPushButton, QLabel, QGridLayout, QMessageBox)
 from PyQt6.QtCore import Qt, QTimer
-from utils.constants import GRID_SIZE, CELL_SIZE, WATER_COLOR, SHIP_COLOR, HIT_COLOR, MISS_COLOR
+from constants import GRID_SIZE, CELL_SIZE, WATER_COLOR, SHIP_COLOR, HIT_COLOR, MISS_COLOR
 import logging
 
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -433,7 +433,7 @@ class MainWindow(QMainWindow):
         
         
 
-     if reply == QMessageBox.StandardButton.Y
+     if reply == QMessageBox.StandardButton.Y:
         if self.game_controller.get_game_state() == 'ended':
             self.start_new_game()
             return

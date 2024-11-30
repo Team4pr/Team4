@@ -2,7 +2,7 @@ from typing import List, Tuple, Optional, Dict
 import random
 from .grid import Grid
 from .ship import Ship
-from utils.constants import SHIPS
+from constants import SHIPS
 
 class Player:
     
