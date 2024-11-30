@@ -2,8 +2,8 @@ from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QPushButton, QLabel,
                            QMessageBox, QMainWindow)
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont, QIcon, QColor, QPalette
-from .instructions_screen import InstructionsScreen
-from .settings_screen import SettingsScreen
+from instructions_screen import InstructionsScreen
+from settings_screen import SettingsScreen
 
 class StartScreen(QMainWindow):
     def __init__(self, main_window):

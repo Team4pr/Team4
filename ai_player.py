@@ -1,7 +1,7 @@
 from typing import Tuple, Optional, Set
 import random
-from .player import Player
-from .ship import Ship
+from player import Player
+from ship import Ship
 from constants import GRID_SIZE
 
 class AIPlayer(Player):

@@ -1,5 +1,5 @@
 from typing import List, Tuple, Optional, Set
-from .ship import Ship, ShipOrientation
+from ship import Ship, ShipOrientation
 
 class Grid:
     
