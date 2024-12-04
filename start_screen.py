@@ -45,6 +45,7 @@ class StartScreen(QMainWindow):
     def show_instructions(self):
         self.instructions_window.show()
         self.instructions_window.raise_()
+         self.instructions_window.showFullScreen()
 
     def close_game(self):
         sys.exit()
