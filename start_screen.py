@@ -53,8 +53,7 @@ class StartScreen(QMainWindow):
         exit_button.clicked.connect(self.close_game)
         exit_button.setStyleSheet("background-color: #e52c3b; font-size: 22px; color: #f4f4f4; font-weight: bold;")
 
-        layout.addWidget(exit_button, alignment=Qt.AlignmentFlag.AlignCenter)
-
+        layout.addWidget(exit_button, alignment=Qt.AlignmentFlag.AlignCenter
         layout.addStretch()
 
     def start_new_game(self):
@@ -73,6 +72,6 @@ class StartScreen(QMainWindow):
         self.instructions_window.raise_()
     
     def close_game(self):
-            
+          
         sys.exit()
 
